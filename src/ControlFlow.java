@@ -70,5 +70,46 @@ public class ControlFlow {
             System.out.println("Run");
             counter++;
         }
+
+        int anotherCounter = 1;
+        do {
+            System.out.println("Loop " + anotherCounter);
+            anotherCounter++;
+        } while (anotherCounter <= 5);
+
+        // Break
+        counter = 1;
+        while (counter <= 5) {
+            System.out.println("While with Break " + counter + " loop");
+            counter++;
+            if (counter == 3) {
+                break;
+            }
+        }
+
+        // Continue
+        for (int i = 1; i <= 5; i++) {
+            if (i == 2) {
+                continue;
+            }
+            System.out.println("For with Continue " + i + " loop");
+        }
+
+
+        // Array
+        String[] names = {"John", "Jane", "George"};
+        int[] ages = {17, 18, 22};
+
+        System.out.println(ages[1]);
+        System.out.println(ages.length);
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
+
+        int[] stocks = {100, 75, 66};
+        for (int stock: stocks) {
+            System.out.println(stock);
+        }
     }
 }
