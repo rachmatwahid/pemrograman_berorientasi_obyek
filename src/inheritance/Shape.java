@@ -2,21 +2,22 @@ package inheritance;
 
 class Shape {
 
-    String name = "Shape Class";
+    byte dimensions = 2;
+    String fillColor;
+
+    Shape(String fillColor) {
+        this.fillColor = fillColor;
+    }
 
     String getClassName() {
-        return name;
+        return "Shape Class";
     }
 
     class Line {
         double coordinateX;
         double coordinateY;
 
-        Line(String lineColor) {
-            name = lineColor;
-        }
-
-        String getInnerSimpleName() {
+        String getOuterClassName() {
             return getClassName();
         }
     }

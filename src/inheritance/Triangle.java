@@ -6,4 +6,7 @@ public class Triangle extends Quadrilateral{
     protected short secondAngle;
     public short thirdAngle;
 
+    Triangle(String color) {
+        super(color);
+    }
 }

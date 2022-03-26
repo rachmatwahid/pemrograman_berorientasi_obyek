@@ -5,6 +5,7 @@ class Rectangle extends Quadrilateral {
     double firstSideLength, secondSideLength;
 
     Rectangle(double firstSideLength, double secondSideLength) {
+        super("White");
         this.firstSideLength = firstSideLength;
         this.secondSideLength = secondSideLength;
     }

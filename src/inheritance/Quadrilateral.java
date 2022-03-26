@@ -2,13 +2,13 @@ package inheritance;
 
 class Quadrilateral extends Shape {
 
-    byte side = 4;
-
-    String getParentClassName() {
-        return name;
+    Quadrilateral(String fillColor) {
+        super(fillColor);
     }
 
-    String getParentSimpleName() {
-        return super.getClassName();
+    byte getDimension() {
+        return dimensions;
     }
+
+    String getParentClassName() { return super.getClassName(); }
 }
