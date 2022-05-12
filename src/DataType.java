@@ -19,7 +19,7 @@ public class DataType {
         // Assignment
         bookPrice = 120000;
         final String paperSize = "A4";
-        //paperSize = "F4"; // Uncomment this
+        // paperSize = "F4"; // Uncomment this
         System.out.println(paperSize);
 
 
