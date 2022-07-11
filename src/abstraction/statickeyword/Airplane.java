@@ -19,6 +19,6 @@ class Airplane {
     }
 
 //    static boolean fly() {
-////        return canFly;
+//        return canFly;
 //    }
 }
